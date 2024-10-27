@@ -68,96 +68,91 @@ export const keysRoute = {
   },
 };
 
-export const router = createBrowserRouter(
-  [
-    {
-      path: keysRoute.base.entry,
-      element: <LayoutRoot />,
-      children: [
-        {
-          index: true,
-          loader: () => redirect(keysRoute.base.board.entry),
-        },
-        {
-          path: keysRoute.base.board.entry,
-          children: [
-            {
-              index: true,
-              loader: () => redirect(keysRoute.base.board.notice.entry),
-            },
-            {
-              path: keysRoute.base.board.notice.entry,
-              element: <PageBoardNotice />,
-              loader: loaderPageBoardNotice,
-            },
-            {
-              path: keysRoute.base.board.qna.entry,
-              element: <PageBoardQna />,
-              loader: loaderPageBoardQna,
-            },
-          ],
-        },
-        {
-          path: keysRoute.base.message.entry,
-          children: [
-            {
-              index: true,
-              loader: () => redirect(keysRoute.base.message.send.entry),
-            },
-            {
-              path: keysRoute.base.message.send.entry,
-              element: <PageMessageSend />,
-            },
-          ],
-        },
-        {
-          path: keysRoute.base.campaign.entry,
-          element: <PageCampaign />,
-        },
-        {
-          path: keysRoute.base.template.entry,
-          element: <PageTemplate />,
-        },
-        {
-          path: keysRoute.base.manageDelivery.entry,
-          element: <PageManageDelivery />,
-        },
-        {
-          path: keysRoute.base.report.entry,
-          element: <PageReport />,
-        },
-        {
-          path: keysRoute.base.statistics.entry,
-          element: <PageStatistics />,
-        },
-        {
-          path: keysRoute.base.accounting.entry,
-          element: <PageAccounting />,
-        },
-        {
-          path: keysRoute.base.manageUser.entry,
-          element: <PageManageUser />,
-        },
-        {
-          path: keysRoute.base.managePush.entry,
-          element: <PageManagePush />,
-        },
-        {
-          path: keysRoute.base.dashboard.entry,
-          element: <PageDashboard />,
-        },
-        {
-          path: keysRoute.base.notFound.entry,
-          element: <PageNotFound />,
-        },
-      ],
-    },
-    {
-      path: '*',
-      loader: () => redirect(keysRoute.base.notFound.entry),
-    },
-  ],
+export const router = createBrowserRouter([
   {
-    basename: '/nosumuh-pre-task',
+    path: keysRoute.base.entry,
+    element: <LayoutRoot />,
+    children: [
+      {
+        index: true,
+        loader: () => redirect(keysRoute.base.board.entry),
+      },
+      {
+        path: keysRoute.base.board.entry,
+        children: [
+          {
+            index: true,
+            loader: () => redirect(keysRoute.base.board.notice.entry),
+          },
+          {
+            path: keysRoute.base.board.notice.entry,
+            element: <PageBoardNotice />,
+            loader: loaderPageBoardNotice,
+          },
+          {
+            path: keysRoute.base.board.qna.entry,
+            element: <PageBoardQna />,
+            loader: loaderPageBoardQna,
+          },
+        ],
+      },
+      {
+        path: keysRoute.base.message.entry,
+        children: [
+          {
+            index: true,
+            loader: () => redirect(keysRoute.base.message.send.entry),
+          },
+          {
+            path: keysRoute.base.message.send.entry,
+            element: <PageMessageSend />,
+          },
+        ],
+      },
+      {
+        path: keysRoute.base.campaign.entry,
+        element: <PageCampaign />,
+      },
+      {
+        path: keysRoute.base.template.entry,
+        element: <PageTemplate />,
+      },
+      {
+        path: keysRoute.base.manageDelivery.entry,
+        element: <PageManageDelivery />,
+      },
+      {
+        path: keysRoute.base.report.entry,
+        element: <PageReport />,
+      },
+      {
+        path: keysRoute.base.statistics.entry,
+        element: <PageStatistics />,
+      },
+      {
+        path: keysRoute.base.accounting.entry,
+        element: <PageAccounting />,
+      },
+      {
+        path: keysRoute.base.manageUser.entry,
+        element: <PageManageUser />,
+      },
+      {
+        path: keysRoute.base.managePush.entry,
+        element: <PageManagePush />,
+      },
+      {
+        path: keysRoute.base.dashboard.entry,
+        element: <PageDashboard />,
+      },
+      {
+        path: keysRoute.base.notFound.entry,
+        element: <PageNotFound />,
+      },
+    ],
   },
-);
+  {
+    path: '*',
+    loader: () => redirect(keysRoute.base.notFound.entry),
+  },
+]);
