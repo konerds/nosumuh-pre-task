@@ -14,6 +14,8 @@ import PageManageUser from '@pages/manage-user/manage-user';
 import PageManagePush from '@pages/manage-push/manage-push';
 import PageDashboard from '@pages/dashboard';
 import LayoutRoot from '@components/layout/LayoutRoot';
+import { loader as loaderPageBoardNotice } from '@/pages/board/notice.loader';
+import { loader as loaderPageBoardQna } from '@/pages/board/qna.loader';
 
 export const keysRoute = {
   base: {
@@ -85,10 +87,12 @@ export const router = createBrowserRouter([
           {
             path: keysRoute.base.board.notice.entry,
             element: <PageBoardNotice />,
+            loader: loaderPageBoardNotice,
           },
           {
             path: keysRoute.base.board.qna.entry,
             element: <PageBoardQna />,
+            loader: loaderPageBoardQna,
           },
         ],
       },

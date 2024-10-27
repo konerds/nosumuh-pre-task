@@ -1,0 +1,77 @@
+{
+  "name": "Q&A",
+  "posts": [
+    {
+      "id": 1,
+      "title": "test",
+      "author": "ruoghks",
+      "nickname_author": "ruoghks",
+      "content": "test",
+      "created_at": "2024-07-04 14:04:22",
+      "views": 5
+    },
+    {
+      "id": 2,
+      "title": "팝업 Q&A 제목입니다.",
+      "author": "tms",
+      "nickname_author": "휴머스온",
+      "content": "팝업 Q&A 제목입니다.",
+      "created_at": "2023-10-10 09:58:44",
+      "views": 38
+    },
+    {
+      "id": 3,
+      "title": "Q&A test",
+      "author": "tms",
+      "nickname_author": "휴머스온",
+      "content": "Q&A 내용",
+      "created_at": "2023-09-26 09:07:39",
+      "views": 24
+    },
+    {
+      "id": 4,
+      "title": "오늘의 Q&A",
+      "author": "tms",
+      "nickname_author": "휴머스온",
+      "content": "오늘의 Q&A",
+      "created_at": "2023-10-04 15:43:28",
+      "views": 17
+    },
+    {
+      "id": 5,
+      "title": "test",
+      "author": "ruoghks",
+      "nickname_author": "ruoghks",
+      "content": "test",
+      "created_at": "2024-07-04 14:04:22",
+      "views": 5
+    },
+    {
+      "id": 6,
+      "title": "팝업 Q&A 제목입니다.",
+      "author": "tms",
+      "nickname_author": "휴머스온",
+      "content": "팝업 Q&A 제목입니다.",
+      "created_at": "2023-10-10 09:58:44",
+      "views": 38
+    },
+    {
+      "id": 7,
+      "title": "Q&A test",
+      "author": "tms",
+      "nickname_author": "휴머스온",
+      "content": "Q&A 내용",
+      "created_at": "2023-09-26 09:07:39",
+      "views": 24
+    },
+    {
+      "id": 8,
+      "title": "오늘의 Q&A",
+      "author": "tms",
+      "nickname_author": "휴머스온",
+      "content": "오늘의 Q&A",
+      "created_at": "2023-10-04 15:43:28",
+      "views": 17
+    }
+  ]
+}

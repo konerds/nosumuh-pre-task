@@ -120,6 +120,7 @@ const Drawer = () => {
     <S.AsideContainer
       style={{
         width: isOpened ? '224px' : '0px',
+        minWidth: isOpened ? '224px' : '0px',
       }}
     >
       <S.DivContainer>
