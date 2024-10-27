@@ -5,5 +5,6 @@ import vitePluginSvgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/nosumuh-pre-task/',
   plugins: [react(), viteTsConfigPaths(), vitePluginSvgr()],
 });
