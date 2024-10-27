@@ -125,13 +125,6 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
-
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
@@ -146,12 +139,24 @@ dist
 **/*.backup.*
 **/*.back.*
 
-node_modules
-
 *.sublime*
 
 psd
 thumb
 sketch
+
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # End of https://www.toptal.com/developers/gitignore/api/node,react
